@@ -19,6 +19,15 @@ namespace IntroCsharp
         case "VariableUsage":
           Variables.VariableUsage();
           break;
+        case "ConditionalIf":
+          Conditionals.ConditionalUsage();
+          break;
+        case "ConditionalOr":
+          Conditionals.ConditionalUsageOr();
+          break;
+        case "ConditionalSwitch":
+          Conditionals.ConditionalUsageSwitch();
+          break;
         default:
           break;
       }

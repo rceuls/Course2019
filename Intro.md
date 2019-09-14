@@ -8,6 +8,8 @@
     - [Oefeningen](#oefeningen)
   - [Variabelen en datatypes](#variabelen-en-datatypes)
     - [Oefeningen](#oefeningen-1)
+  - [Conditionals](#conditionals)
+    - [Oefeningen](#oefeningen-2)
 
 ## Hello world ##
 
@@ -24,7 +26,8 @@ Hoe bekom je dit programma:
 
 ### Oefeningen ###
 
-- Verwijder links en rechts wat code; bekijk het effect.
+- Verwijder de System. van de System.Console lijn; welke fout krijg je?
+- Bekijk hoe [de using directive](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/using-directive) werkt, lost het bovenstaande probleem op.
 
 ## Variabelen en datatypes ##
 
@@ -38,3 +41,29 @@ Je kan op twee manieren een variable declareren: met `var` of met de volledige t
 - Probeer van twee variabelen de som te maken en te printen naar STDOUT.
 - Probeer een string en een int op te tellen; welke fout krijg je?
 - Zoek de verschillende manieren van string interpolation op en probeer ze uit; welke ligt het beste?
+- Zorg er voor dat je zeker de volgende datatypes snapt en kan gebruiken: boolean, string, int, double.
+
+## Conditionals ##
+
+```cs --source-file ./IntroCsharp/Conditionals.cs --region ConditionalIf --project ./IntroCsharp/IntroCsharp.csproj
+```
+
+Dit is een hopeloos verbose manier om een `if` te schrijven.
+
+```cs --source-file ./IntroCsharp/Conditionals.cs --region ConditionalOr --project ./IntroCsharp/IntroCsharp.csproj
+```
+
+Dit is al korter en doet exact hetzelfde. `||` geeft aan dat je een `conditional or` hier wilt doen.
+
+```cs --source-file ./IntroCsharp/Conditionals.cs --region ConditionalSwitch --project ./IntroCsharp/IntroCsharp.csproj
+```
+
+En je kan ook een switch gebruiken; dit doet wederom juist hetzelfde. Let op het volgende: de positie van het break statement, de waarden die je opvult en het default statement op het einde.
+
+### Oefeningen ###
+
+- Verwijder de break statements en kijk wat het resultaat is.
+- Het `switch` statement kan korter, probeer de kortst mogelijke manier te vinden.
+- Schrijf een stukje code met de volgende functionaliteit: als vandaag een weekdag is én het is voor vier uur 's namiddags print je "a", anders print je "b".
+  - Hoe test je dit?
+  - "Vandaag" moet je niet hardcoderen, hier bestaat een methode voor.

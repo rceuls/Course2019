@@ -1,4 +1,3 @@
-// This is a namespace; a user defined logical grouping of classes.
 using System;
 
 namespace IntroCsharp

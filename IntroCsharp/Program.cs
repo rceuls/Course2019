@@ -34,6 +34,12 @@ namespace IntroCsharp
         case "CollectionsList":
           Collections.CollectionsList();
           break;
+        case "IteratorsForeach":
+          Iterators.IteratorsForeach();
+          break;
+        case "IteratorsDoWhile":
+          Iterators.IteratorsDoWhile();
+          break;
         default:
           break;
       }

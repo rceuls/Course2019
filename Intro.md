@@ -15,6 +15,10 @@
     - [Lists](#lists)
     - [Anderen](#anderen)
     - [Oefeningen](#oefeningen-3)
+  - [Iteraties](#iteraties)
+    - [Foreach](#foreach)
+    - [Do while/while do](#do-whilewhile-do)
+    - [Oefeningen](#oefeningen-4)
 
 ## Hello world ##
 
@@ -121,3 +125,19 @@ Andere collecties die belangrijk zijn:
 
 - Maak een dictionary met als key de dagen van de week (gebruik hiervoor de `DayOfWeek` enumeratie) en als value de aantal uren les dat je hebt.
 - Toon deze dan volgens het formaat "WEEKDAG - uren les: AANTAL" op STDOUT.
+
+## Iteraties ##
+
+### Foreach ###
+
+```cs --source-file ./IntroCsharp/Iterators.cs --region IteratorsForeach --project ./IntroCsharp/IntroCsharp.csproj
+```
+
+### Do while/while do ###
+
+```cs --source-file ./IntroCsharp/Iterators.cs --region IteratorsDoWhile --project ./IntroCsharp/IntroCsharp.csproj
+```
+
+### Oefeningen ###
+
+- Zoek uit hoe een standaard `for` werkt en maak het voorbeeld van de foreach met een standaard for.

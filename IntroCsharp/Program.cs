@@ -28,6 +28,12 @@ namespace IntroCsharp
         case "ConditionalSwitch":
           Conditionals.ConditionalUsageSwitch();
           break;
+        case "CollectionsArray":
+          Collections.CollectionsArray();
+          break;
+        case "CollectionsList":
+          Collections.CollectionsList();
+          break;
         default:
           break;
       }

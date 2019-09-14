@@ -10,6 +10,11 @@
     - [Oefeningen](#oefeningen-1)
   - [Conditionals](#conditionals)
     - [Oefeningen](#oefeningen-2)
+  - [Collecties](#collecties)
+    - [Arrays](#arrays)
+    - [Lists](#lists)
+    - [Anderen](#anderen)
+    - [Oefeningen](#oefeningen-3)
 
 ## Hello world ##
 
@@ -67,3 +72,52 @@ En je kan ook een switch gebruiken; dit doet wederom juist hetzelfde. Let op het
 - Schrijf een stukje code met de volgende functionaliteit: als vandaag een weekdag is én het is voor vier uur 's namiddags print je "a", anders print je "b".
   - Hoe test je dit?
   - "Vandaag" moet je niet hardcoderen, hier bestaat een methode voor.
+
+## Collecties ##
+
+### Arrays ###
+
+```cs --source-file ./IntroCsharp/Collections.cs --region CollectionsArray --project ./IntroCsharp/IntroCsharp.csproj
+```
+
+Een array ...
+
+- heeft een vastgestelde lengte
+- alle objecten hebben hun default waarde (null voor de meeste, 0 voor integers, ... )
+- zero indexed
+- één type / array. Allemaal string, allemaal int, niet door elkaar.
+
+Vragen
+
+- Hoe kan je één item displayen van de array?
+- Kan je een array item ophalen ook al heb je er niet expliciet een waarde aan toegekend?
+- Kan je array's resizen? Hoe?
+
+### Lists ###
+
+```cs --source-file ./IntroCsharp/Collections.cs --region CollectionsList --project ./IntroCsharp/IntroCsharp.csproj
+```
+
+Een list ...
+
+- heeft géén vastgestelde lengte
+- geen default waarden.
+- zero indexed
+- één type / list. Allemaal string, allemaal int, niet door elkaar.
+- Hetgene tussen de haken noemt een "generic" en geeft een aanduiding van welk type de list-elements zijn.
+
+Vragen
+
+- Hoe haal je een bepaald item op vanop een bepaalde plaats in een list?
+
+### Anderen ###
+
+Andere collecties die belangrijk zijn:
+
+- [Dictionary](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2?view=netcore-2.2)
+- [Queue](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.queue-1?view=netcore-2.2)
+
+### Oefeningen ###
+
+- Maak een dictionary met als key de dagen van de week (gebruik hiervoor de `DayOfWeek` enumeratie) en als value de aantal uren les dat je hebt.
+- Toon deze dan volgens het formaat "WEEKDAG - uren les: AANTAL" op STDOUT.

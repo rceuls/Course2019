@@ -145,7 +145,7 @@ Andere collecties die belangrijk zijn:
 
 ## Bringing it all together ##
 
-Een grotere oefening ditmaal; je kan hiervoor best een echt apart project aanmaken.
+Een grotere oefening ditmaal; je kan hiervoor best een "echt" apart project aanmaken.
 
 - We gaan een in-memory database maken die je manipuleert via de commandline.
 - We gaan van een lijst van personen de leeftijd bijhouden; welk datatype gebruik je best om de collectie voor te stellen?

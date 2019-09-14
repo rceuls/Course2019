@@ -19,6 +19,7 @@
     - [Foreach](#foreach)
     - [Do while/while do](#do-whilewhile-do)
     - [Oefeningen](#oefeningen-4)
+  - [Bringing it all together](#bringing-it-all-together)
 
 ## Hello world ##
 
@@ -141,3 +142,22 @@ Andere collecties die belangrijk zijn:
 ### Oefeningen ###
 
 - Zoek uit hoe een standaard `for` werkt en maak het voorbeeld van de foreach met een standaard for.
+
+## Bringing it all together ##
+
+Een grotere oefening ditmaal; je kan hiervoor best een echt apart project aanmaken.
+
+- We gaan een in-memory database maken die je manipuleert via de commandline.
+- We gaan van een lijst van personen de leeftijd bijhouden; welk datatype gebruik je best om de collectie voor te stellen?
+- Zorg ervoor dat je een oneindige loop krijgt met behulp van Console.ReadLine() en ondersteun de volgende commandos:
+  - exit
+  - add <naam> <leeftijd>
+  - update <naam> <leeftijd>
+  - remove <naam>
+  - list (laat alles zien)
+- Zorg ervoor dat je alleen positieve nummers kan invoeren voor de leeftijd. Als je een update doet mag je géén lagere leeftijd toekennen.
+
+Je gaat het volgende (zeker, minstens) nodig hebben:
+
+- <https://docs.microsoft.com/en-us/dotnet/api/system.console.readline?view=netcore-2.2>
+- <https://docs.microsoft.com/en-us/dotnet/api/system.int32.parse?view=netcore-2.2>

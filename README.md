@@ -1,6 +1,6 @@
 # README #
 
-To run this repo you need both the .NET Core SDK and the [.NET try](https://github.com/dotnet/try) tool. Check out this repo, install the tool and run `dotnet try` in the root.
+To run this repo you need both the .NET Core SDK [3.X](https://dotnet.microsoft.com/download/dotnet-core/3.0) and the [.NET try](https://github.com/dotnet/try) tool. Check out this repo, install the tool and run `dotnet try` in the root.
 
 ## Course ##
 

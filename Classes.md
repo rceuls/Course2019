@@ -35,7 +35,6 @@
 ```cs --source-file ./OOCsharp/Interfaces.cs --region OO2 --project ./OOCsharp/OOCsharp.csproj
 ```
 
-
 ### Oefeningen ###
 
 - Bedenk een paar logische interfaces voor de classes uit de eerste oefening.

@@ -19,4 +19,4 @@ To run this repo you need both the .NET Core SDK [3.X](https://dotnet.microsoft.
 ## Course ##
 
 * <a href="Intro.md"> Intro</a>
-* <a href="Classes.md"> Intro</a> 
+* <a href="Classes.md"> Object Oriented Programming</a> 

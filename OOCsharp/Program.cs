@@ -16,6 +16,9 @@
         case "OO2":
           Interfaces.RunStuff(null);
           break;
+        case "OO3":
+          AbstractClasses.RunStuff(null);
+          break;
         default:
           break;
       }

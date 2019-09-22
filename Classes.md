@@ -5,13 +5,14 @@
   - [Inhoud](#inhoud)
   - [Classes](#classes)
     - [Oefeningen](#oefeningen)
-  - [Interfaces](#interfaces)
+  - [Interfaces/Abstract classes](#interfacesabstract-classes)
     - [Oefeningen](#oefeningen-1)
   - [OO Principes](#oo-principes)
     - [Abstraction](#abstraction)
     - [Encapsulation](#encapsulation)
     - [Inheritance](#inheritance)
     - [Polymorphism](#polymorphism)
+  - [Bringing it all together](#bringing-it-all-together)
 
 ## Classes ##
 
@@ -26,11 +27,12 @@
 - Maak een nieuw project aan.
 - Modelleer hierin een dierenasiel voor katten en honden.
 
-## Interfaces ##
+## Interfaces/Abstract classes ##
 
 - Contracten die je oplegt aan je classes.
-- Kan je lezen als een "is-a" definitie. "A car **is a** Vehicle".
-- By convention starten met een I (IVehicle).
+- Een interface kan je lezen als een "can-do" definitie. "A Car **can do** IVehicle stuff". Starten by convention met een hoofdletter I.
+- Je hebt ook abstracte classes, die meer een "is-a" definitie omvatten. "A Car is a Vehicle".  
+- Een class kan meerdere interfaces implementeren, maar maar één abstracte class.
 
 ```cs --source-file ./OOCsharp/Interfaces.cs --region OO2 --project ./OOCsharp/OOCsharp.csproj
 ```
@@ -45,6 +47,9 @@
 
 - Zorgt ervoor dat je weet _wat_ een module doet, zonder dat je moet weten _hoe_.
 
+```cs --source-file ./OOCsharp/AbstractClasses.cs --region OO3 --project ./OOCsharp/OOCsharp.csproj
+```
+
 ### Encapsulation ###
 
 - Sluit aan bij abstractie.
@@ -56,3 +61,13 @@
 - Kan je ook doen met een klasse-hierarchie.
 
 ### Polymorphism ###
+
+## Bringing it all together ##
+
+TL;DR Herwerk de oefening uit de vorige les op een OO manier.
+
+- Gebruikers in een database.
+- Voorzie de mogelijkheid om onderscheid te maken tussen "Administrators" en "Users".
+- Voorzie CRUD-methodes.
+- Zorg ervoor dat een user op zijn minst een naam, voornaam en leeftijd heeft. Deze moeten uniek zijn binnen het systeem. Als je een gebruiker toevoegt die al bestaat geef je een fout (zonder het programma af te sluiten).
+- Als je het werkende krijgt met een lijst, doe dan hetzelfde met een [Hashset](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.hashset-1?view=netcore-2.2). Zoek hiervoor op hoe GetHashCode(), Equals(), ... werkt. Bekijk hiervoor zeker [HashCode](https://docs.microsoft.com/en-us/dotnet/api/system.hashcode?view=netstandard-2.1).

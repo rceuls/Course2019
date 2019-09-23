@@ -79,3 +79,5 @@ TL;DR Herwerk de oefening uit de vorige les op een OO manier.
 - Vul de brouwerij op; interactief moet niet.
 - Schrijf een console-applicatie dit uitprint op de STDOUT.
 - Probeer zeker het volgende scenario uit: print alle bieren uit, verander de naam van één van de types. Print terug alle bieren uit.
+
+> Lees het volgende na om te weten _waarom_ dit zo is: [Value types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/value-types) en [Reference types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/reference-types).

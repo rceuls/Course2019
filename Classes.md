@@ -13,6 +13,7 @@
     - [Inheritance](#inheritance)
     - [Polymorphism](#polymorphism)
   - [Bringing it all together](#bringing-it-all-together)
+  - [Bringing it all together - Part II](#bringing-it-all-together---part-ii)
 
 ## Classes ##
 
@@ -71,3 +72,10 @@ TL;DR Herwerk de oefening uit de vorige les op een OO manier.
 - Voorzie CRUD-methodes.
 - Zorg ervoor dat een user op zijn minst een naam, voornaam en leeftijd heeft. Deze moeten uniek zijn binnen het systeem. Als je een gebruiker toevoegt die al bestaat geef je een fout (zonder het programma af te sluiten).
 - Als je het werkende krijgt met een lijst, doe dan hetzelfde met een [Hashset](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.hashset-1?view=netcore-2.2). Zoek hiervoor op hoe GetHashCode(), Equals(), ... werkt. Bekijk hiervoor zeker [HashCode](https://docs.microsoft.com/en-us/dotnet/api/system.hashcode?view=netstandard-2.1).
+
+## Bringing it all together - Part II ##
+
+- Modelleer een brouwerij: een brouwerij heeft een eigenaar en een lijst van bieren (naam, type). Een bier heeft een bepaald type (naam).
+- Vul de brouwerij op; interactief moet niet.
+- Schrijf een console-applicatie dit uitprint op de STDOUT.
+- Probeer zeker het volgende scenario uit: print alle bieren uit, verander de naam van één van de types. Print terug alle bieren uit.

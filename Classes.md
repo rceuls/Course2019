@@ -66,6 +66,9 @@
 
 ### Polymorphism ###
 
+```cs --source-file ./OOCsharp/Polymorphism.cs --region OO4 --project ./OOCsharp/OOCsharp.csproj
+```
+
 ## Bringing it all together ##
 
 TL;DR Herwerk de oefening uit de vorige les op een OO manier.

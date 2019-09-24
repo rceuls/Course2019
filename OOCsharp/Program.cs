@@ -19,6 +19,9 @@
         case "OO3":
           AbstractClasses.RunStuff(null);
           break;
+        case "OO4":
+          Polymorphism.RunStuff(null);
+          break;
         default:
           break;
       }

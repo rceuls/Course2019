@@ -32,7 +32,7 @@
 
 - Contracten die je oplegt aan je classes.
 - Een interface kan je lezen als een "can-do" definitie. "A Car **can do** IVehicle stuff". Starten by convention met een hoofdletter I.
-- Je hebt ook abstracte classes, die meer een "is-a" definitie omvatten. "A Car is a Vehicle".  
+- Je hebt ook abstracte classes, die meer een "is-a" definitie omvatten. "A Car **is a** Vehicle".  
 - Een class kan meerdere interfaces implementeren, maar maar één abstracte class.
 
 ```cs --source-file ./OOCsharp/Interfaces.cs --region OO2 --project ./OOCsharp/OOCsharp.csproj
@@ -47,6 +47,8 @@
 ### Abstraction ###
 
 - Zorgt ervoor dat je weet _wat_ een module doet, zonder dat je moet weten _hoe_.
+- Als je methodes wil implementeren moet je [overrides](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/override) gebruiken in de classes die overerven van een base-class.
+- Alle methodes die je wilt kunnen overriden moeten [abstract](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/abstract) _of_ [virtual](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/virtual) zijn. Abstracte methodes moét je overriden (anders compiler fout). Virtuele methodes kan je overriden. Niet-virtual methodes kan je niet overriden maar kan je re-implementeren met het [new keyword](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/new-modifier) (bad practice).
 
 ```cs --source-file ./OOCsharp/AbstractClasses.cs --region OO3 --project ./OOCsharp/OOCsharp.csproj
 ```
@@ -55,6 +57,7 @@
 
 - Sluit aan bij abstractie.
 - "Verstopt" de complexiteit van een object zodat de end-user alleen maar te zien krijgt wat er precies moet getoond worden.
+- Kan je doen met behulp van [access modifiers](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers). Je kan je (zeker initieel) het beste beperken tot public, protected en private.
 
 ### Inheritance ###
 

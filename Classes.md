@@ -17,7 +17,7 @@
 
 ## Classes ##
 
-- Een class bestaat uit _attributes_ en _behaviour_. Attributes zijn "velden" waarin je data bewaart. Bij een auto is dit bijvoorbeeld de kleur, model, ... . Behaviour zijn acties die het object kan ondernemen: _start_, _stop_, ... .
+- Een class bestaat uit _attributes_ en _behaviour_. Attributes zijn "velden" waarin je data bewaart. Bij een auto is dit bijvoorbeeld _de kleur_, _het model_, ... . Behaviour zijn acties die het object kan ondernemen: _start_, _stop_, ... .
 - Een object is een instantie van een class. Je vader zijn Volvo is een instantie van een auto-class.
 
 ```cs --source-file ./OOCsharp/Basic.cs --region OO1 --project ./OOCsharp/OOCsharp.csproj

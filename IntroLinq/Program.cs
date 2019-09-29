@@ -63,6 +63,9 @@ namespace IntroLinq
 
       Console.WriteLine($"De colruyt in Wieze, totale waarde (linq) : {totalValueInStock}");
 
+      totalValueInStock = (from stock in colruytWieze.Stocks select stock.Product.Price * stock.Amount).Sum();
+
+      Console.WriteLine($"De colruyt in Wieze, totale waarde (linq - query) : {totalValueInStock}");
 
       var cheeseValueInStock = 0.0m;
       foreach (var stock in colruytWieze.Stocks)
@@ -78,6 +81,13 @@ namespace IntroLinq
       cheeseValueInStock = colruytWieze.Stocks.Where(x => x.Product == cheese).Sum(x => x.Product.Price * x.Amount);
 
       Console.WriteLine($"De colruyt in Wieze, totale waarde kaas (linq) : {cheeseValueInStock}");
+
+      cheeseValueInStock = (
+        from stock in colruytWieze.Stocks
+        where stock.Product == cheese
+        select stock.Product.Price * stock.Amount).Sum();
+
+      Console.WriteLine($"De colruyt in Wieze, totale waarde kaas (linq - query) : {cheeseValueInStock}");
 
       var totalValueInStockEverywhere = 0.0m;
       foreach (var stock in colruytWieze.Stocks)

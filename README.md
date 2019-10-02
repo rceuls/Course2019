@@ -6,11 +6,11 @@ To run this repo you need both the .NET Core SDK [3.X](https://dotnet.microsoft.
 
 ### My command prompt says "no dotnet-try" found? ###
 
-* Make sure the dotnet tools directory is added to your PATH. On windows this is at %USERPROFILE%/.dotnet/tools. Unix systems use ~/.dotnet/tools. Refresh your path afterwards.
+- Make sure the dotnet tools directory is added to your PATH. On windows this is at %USERPROFILE%/.dotnet/tools. Unix systems use ~/.dotnet/tools. Refresh your path afterwards.
 
 ### The samples don't seem to run ###
 
-* If this happens ...
+- If this happens ...
   1. Cancel the process with ctrl+c
   2. navigate into the "IntroCsharp" directory
   3. run `dotnet.build`
@@ -18,6 +18,10 @@ To run this repo you need both the .NET Core SDK [3.X](https://dotnet.microsoft.
 
 ## Course ##
 
-* <a href="Intro.md"> Intro</a>
-* <a href="Classes.md"> Object Oriented Programming</a>
-* <a href="Linq.md"> Linq</a>
+- <a href="Intro.md"> Intro</a>
+- <a href="Classes.md"> Object Oriented Programming</a>
+- <a href="Linq.md"> Linq</a>
+
+## Assignment ##
+
+- <a href="Shelter.md">Part 1</a>

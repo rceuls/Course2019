@@ -105,6 +105,10 @@ namespace IntroLinq
 
       Console.WriteLine($"De colruyt in Wieze, totale waarde (linq) : {totalValueInStockEverywhere}");
 
+      var baseQuery = colruytWieze.Stocks.Where(x => x.Amount > 0).Where(x => x.Product == cheese);
+      var totalCount = baseQuery.Count();
+      var pagedResult = baseQuery.Take(20).ToList();
+
     }
   }
 }

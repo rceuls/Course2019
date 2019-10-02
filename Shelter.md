@@ -8,12 +8,12 @@ We gaan een aanzet geven voor de "grote oefening".
 
 ## Aanmaken projectstructuur ##
 
-- `mkdir <NAAM>.Shelter`, bv `RafCeuls.Shelter`
+- `mkdir Shelter`, bv `Shelter`
 - Navigeer naar die subdirectory
-- Maak een nieuw project aan: `dotnet new console -o <Naam>.Shelter.Shared`
+- Maak een nieuw project aan: `dotnet new console -o Shelter.Shared`
 - Open deze folder in je editor.
 
-Dit project gaat dienen voor onze "gedeelde" code. Maak hierin een folder aan voor het domeinmodel. Je namespace gaat `<Name>.Shelter.Shared.Domain` zijn.
+Dit project gaat dienen voor onze "gedeelde" code. Maak hierin een folder aan voor het domeinmodel. Je namespace gaat `Shelter.Shared.Domain` zijn.
 
 ## Domainmodel ##
 

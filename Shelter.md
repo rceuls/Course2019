@@ -3,6 +3,7 @@
 - [Opdracht](#opdracht)
   - [Aanmaken projectstructuur](#aanmaken-projectstructuur)
   - [Domainmodel](#domainmodel)
+  - [ASP.NET MVC - basis](#aspnet-mvc---basis)
 
 We gaan een aanzet geven voor de "grote oefening".
 
@@ -28,3 +29,11 @@ Dit project gaat dienen voor onze "gedeelde" code. Maak hierin een folder aan vo
   - Een kat heeft `Race`, `Declawed`.
   - Een hond heeft `Race`, `Barker`
   - Andere heeft `Description`, `Kind`
+
+## ASP.NET MVC - basis ##
+
+- Maak een nieuw MVC project
+- Voeg een referentie toe aan dat MVC project naar je "Shared" library via `dotnet add` ([documentatie](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-add-reference))
+- Maak een nieuwe controller aan (`ShelterController`)
+- Zorg dat deze een index page heeft met daarop een (hardcoded) lijst van dieren. Gebruik hiervoor dezelfde modellen als in je Shared library.
+- Gebruik géén `ViewData`; zorg voor een model.

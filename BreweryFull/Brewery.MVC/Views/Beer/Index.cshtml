@@ -1,0 +1,15 @@
+@model Brewery.Shared.Brewery
+
+<table>
+  <tr>
+    <td>Name</td>
+    <td>Type Name</td>
+  </tr>
+  @foreach (var item in Model.Beers)
+  {
+    <tr>
+      <td>@item.Name</td>
+      <td>@item.BeerType.Name</td>
+    </tr>
+  }
+</table>

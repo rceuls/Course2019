@@ -4,6 +4,7 @@
   - [Aanmaken projectstructuur](#aanmaken-projectstructuur)
   - [Domainmodel](#domainmodel)
   - [ASP.NET MVC - basis](#aspnet-mvc---basis)
+  - [ASP.NET MVC - detail screen](#aspnet-mvc---detail-screen)
 
 We gaan een aanzet geven voor de "grote oefening".
 
@@ -37,3 +38,11 @@ Dit project gaat dienen voor onze "gedeelde" code. Maak hierin een folder aan vo
 - Maak een nieuwe controller aan (`ShelterController`)
 - Zorg dat deze een index page heeft met daarop een (hardcoded) lijst van dieren. Gebruik hiervoor dezelfde modellen als in je Shared library.
 - Gebruik géén `ViewData`; zorg voor een model.
+
+## ASP.NET MVC - detail screen ##
+
+- Zorg ervoor dat je, als je op de naam van het dier klikt, naar een detailpagina gaat waar je de details van het dier kan bekijken.
+  - Waarschijnlijk ga je hiervoor een `id` moeten toevoegen aan de `Animal` class
+  - Lees ook eens na hoe [tag helpers](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/built-in/anchor-tag-helper?view=aspnetcore-3.0) werken.
+
+- Zorg ervoor dat er een delete knop (of link, of ...) naast het dier staat (op de overzichtslijst) waardoor je naar een confirmation page gaat. Op deze pagina staan twee knoppen (confirm, back). Deze gaan ofwel terugnavigeren naar de overzichtspagina, ofwel eerst deleten en dan terug navigeren naar de overzichtspagina.

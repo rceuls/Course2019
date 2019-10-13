@@ -46,3 +46,7 @@ Dit project gaat dienen voor onze "gedeelde" code. Maak hierin een folder aan vo
   - Lees ook eens na hoe [tag helpers](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/built-in/anchor-tag-helper?view=aspnetcore-3.0) werken.
 
 - Zorg ervoor dat er een delete knop (of link, of ...) naast het dier staat (op de overzichtslijst) waardoor je naar een confirmation page gaat. Op deze pagina staan twee knoppen (confirm, back). Deze gaan ofwel terugnavigeren naar de overzichtspagina, ofwel eerst deleten en dan terug navigeren naar de overzichtspagina.
+
+- Zorg ervoor dat je delete een POST doet (via een form) die het dier in kwestie gaat verwijderen; navigeer daarna terug naar de hoofdpagina.
+
+- Maak een editform waarin je de _naam_ van het dier kan aanpassen; de rest moet (voorlopig) niet. Dezelfde behaviour als bij de delete: update het item en navigeer terug naar het overzichtscherm.

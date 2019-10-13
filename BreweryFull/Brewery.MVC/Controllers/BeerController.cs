@@ -1,9 +1,8 @@
-using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Brewery.MVC.Models;
-using System.Collections.Generic;
 using Brewery.Shared;
+using System.Linq;
 
 namespace Brewery.MVC.Controllers
 {
@@ -18,19 +17,40 @@ namespace Brewery.MVC.Controllers
 
     public IActionResult Index()
     {
-      var darkSpecial = new BeerType { Name = "Donker Speciaalbier" };
-      var tripel = new BeerType { Name = "Tripel" };
-      var amberSpecial = new BeerType { Name = "Amber speciaalbier" };
-      var brewery = new Brewery.Shared.Brewery()
+      return View(BeerDatabase.Brewery);
+    }
+
+    public IActionResult Detail(int id)
+    {
+      var targetBeer = BeerDatabase.Brewery.Beers.FirstOrDefault(x => x.Id == id);
+      if (targetBeer == default(Beer))
       {
-        Beers = new List<Beer> {
-          new Beer { Name = "Gouden Carolus Classic", BeerType = darkSpecial },
-          new Beer { Name = "Gouden Carolus Tripel", BeerType = tripel },
-          new Beer { Name = "Gouden Carolus Tripel Versie II", BeerType = tripel },
-          new Beer { Name = "Gouden Carolus Ambrio", BeerType = amberSpecial }
-        }
-      };
-      return View(brewery);
+        return NotFound();
+      }
+      return View(targetBeer);
+    }
+
+    public IActionResult Delete(int id)
+    {
+      var targetBeer = BeerDatabase.Brewery.Beers.FirstOrDefault(x => x.Id == id);
+      if (targetBeer == default(Beer))
+      {
+        return NotFound();
+      }
+      return View(targetBeer);
+    }
+
+    [HttpPost]
+    public IActionResult DoDelete(int id)
+    {
+      var targetBeer = BeerDatabase.Brewery.Beers.FirstOrDefault(x => x.Id == id);
+      if (targetBeer == default(Beer))
+      {
+        return NotFound();
+      }
+      BeerDatabase.Brewery.Beers.Remove(targetBeer);
+      return RedirectToAction(nameof(Index));
+
     }
   }
 }

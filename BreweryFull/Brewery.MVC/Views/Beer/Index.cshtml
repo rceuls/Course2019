@@ -2,14 +2,17 @@
 
 <table>
   <tr>
-    <td>Name</td>
-    <td>Type Name</td>
+    <th>Name</th>
+    <th>Type Name</th>
   </tr>
   @foreach (var item in Model.Beers)
   {
     <tr>
       <td>@item.Name</td>
       <td>@item.BeerType.Name</td>
+      <td><a asp-controller="Beer" asp-action="Detail" asp-route-id=@item.Id>Detail</a></td>
+      <td><a asp-controller="Beer" asp-action="Delete" asp-route-id=@item.Id>Delete</a></td>
+
     </tr>
   }
 </table>

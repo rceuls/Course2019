@@ -5,6 +5,7 @@
   - [Domainmodel](#domainmodel)
   - [ASP.NET MVC - basis](#aspnet-mvc---basis)
   - [ASP.NET MVC - detail screen](#aspnet-mvc---detail-screen)
+  - [ASP.NET MVC - JSON Endpoints](#aspnet-mvc---json-endpoints)
 
 We gaan een aanzet geven voor de "grote oefening".
 
@@ -50,3 +51,11 @@ Dit project gaat dienen voor onze "gedeelde" code. Maak hierin een folder aan vo
 - Zorg ervoor dat je delete een POST doet (via een form) die het dier in kwestie gaat verwijderen; navigeer daarna terug naar de hoofdpagina.
 
 - Maak een editform waarin je de _naam_ van het dier kan aanpassen; de rest moet (voorlopig) niet. Dezelfde behaviour als bij de delete: update het item en navigeer terug naar het overzichtscherm.
+
+## ASP.NET MVC - JSON Endpoints ##
+
+- Voorzie een extra controller (`/api`) met daarop een aantal subroutes
+  - `/api/brewery/` geeft een lijst van terug van { id, name } van de shelter
+  - `/api/brewery/<id>/beers` geeft een lijst van alle dieren van die shelter weer
+
+Alle resultaten moeten in `json` teruggegeven worden. [Deze link](https://docs.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-3.0) is een goed startpunt hiervoor.

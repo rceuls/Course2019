@@ -59,3 +59,5 @@ Dit project gaat dienen voor onze "gedeelde" code. Maak hierin een folder aan vo
   - `/api/brewery/<id>/beers` geeft een lijst van alle dieren van die shelter weer
 
 Alle resultaten moeten in `json` teruggegeven worden. [Deze link](https://docs.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-3.0) is een goed startpunt hiervoor.
+
+

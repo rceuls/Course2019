@@ -2,7 +2,7 @@
 
 namespace Brewery.Shared
 {
-  public class BeerType
+  public class BeerType : BaseDbClass
   {
     public string Name { get; set; }
   }

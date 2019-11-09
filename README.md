@@ -22,6 +22,8 @@ To run this repo you need both the .NET Core SDK [3.X](https://dotnet.microsoft.
 - <a href="Classes.md"> Object Oriented Programming</a>
 - <a href="Linq.md"> Linq</a>
 - <a href="ASPNET_intro.md">Intro ASP.NET</a>
+- <a href="EntityFrameworkCore.md">EF Core</a>
+- 
 
 ## Assignment ##
 

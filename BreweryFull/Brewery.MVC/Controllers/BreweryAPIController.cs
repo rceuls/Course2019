@@ -6,25 +6,25 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Brewery.MVC.Controllers
 {
-  [Route("/api")]
-  public class APIController : Controller
+  [Route("/api/breweries")]
+  public class BreweryAPIController : Controller
   {
     private readonly BreweryContext _breweryContext;
-    private readonly ILogger<APIController> _logger;
+    private readonly ILogger<BreweryAPIController> _logger;
 
-    public APIController(ILogger<APIController> logger, BreweryContext breweryContext)
+    public BreweryAPIController(ILogger<BreweryAPIController> logger, BreweryContext breweryContext)
     {
       _breweryContext = breweryContext;
       _logger = logger;
     }
 
-    [Route("breweries")]
+    [Route("")]
     public IActionResult GetAllBreweries()
     {
       return Ok(_breweryContext.Breweries);
     }
 
-    [Route("breweries/full")]
+    [Route("full")]
     public IActionResult GetAllBreweriesFull()
     {
       // You return a list here, "not found" is not an issue -- an empty list is still a valid list.
@@ -34,7 +34,7 @@ namespace Brewery.MVC.Controllers
       );
     }
 
-    [Route("breweries/{id}")]
+    [Route("{id}")]
     public IActionResult GetBrewery(int id)
     {
       // Either you find the brewery or not. If you don't find your resource return a 404 (as per https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)
@@ -42,7 +42,7 @@ namespace Brewery.MVC.Controllers
       return brewery == default(Shared.Brewery) ? (IActionResult)NotFound() : Ok(brewery);
     }
 
-    [Route("breweries/{id}/beers")]
+    [Route("{id}/beers")]
     public IActionResult GetBreweryBeers(int id)
     {
       // if you don't find the brewery, return a 404. Again, an empty list is an empty list so empty list of beer is a valid result.
@@ -53,7 +53,7 @@ namespace Brewery.MVC.Controllers
     }
 
 
-    [Route("breweries/{breweryId}/beers/{beerId}")]
+    [Route("{breweryId}/beers/{beerId}")]
     public IActionResult GetBeerDetails(int breweryId, int beerId)
     {
       // this can return two kinds of 404's; one for the non-existing brewery and one for the non-existing beer.

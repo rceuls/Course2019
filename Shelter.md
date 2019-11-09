@@ -55,8 +55,8 @@ Dit project gaat dienen voor onze "gedeelde" code. Maak hierin een folder aan vo
 ## ASP.NET MVC - JSON Endpoints ##
 
 - Voorzie een extra controller (`/api`) met daarop een aantal subroutes
-  - `/api/brewery/` geeft een lijst van terug van { id, name } van de shelter
-  - `/api/brewery/<id>/beers` geeft een lijst van alle dieren van die shelter weer
+  - `/api/shelters/` geeft een lijst van terug van { id, name } van de shelter
+  - `/api/shelters/<id>/animals` geeft een lijst van alle dieren van die shelter weer
 
 Alle resultaten moeten in `json` teruggegeven worden. [Deze link](https://docs.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-3.0) is een goed startpunt hiervoor.
 

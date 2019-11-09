@@ -11,6 +11,7 @@
     - [DBSet](#dbset)
     - [DBContext](#dbcontext)
   - [Queries](#queries)
+  - [Deferred Execution](#deferred-execution)
   - [Voorbeeld](#voorbeeld)
 
 ## Object Relational Mappers ##
@@ -97,6 +98,10 @@ Achterliggend vertaalt EF dit naar
 SELECT "b"."Id", "b"."Name", "b"."OwnerId"
 FROM "Breweries" AS "b"
 ```
+
+## Deferred Execution ##
+
+Lees hiervoor de volgende link na: <https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ef/language-reference/query-execution>
 
 ## Voorbeeld ##
 

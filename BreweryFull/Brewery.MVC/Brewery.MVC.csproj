@@ -9,4 +9,9 @@
     <ProjectReference Include="..\Brewery.Shared\Brewery.Shared.csproj" />
   </ItemGroup>
 
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.0.0" />
+  </ItemGroup>
+
 </Project>

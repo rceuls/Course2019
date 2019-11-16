@@ -115,7 +115,7 @@ Je kan best via [deze pagina](https://docs.microsoft.com/en-us/ef/core/providers
 
 Je kan voorbeelden vinden van hoe je je project aanpast voor EF Core op de [pull request van brewery](https://github.com/rceuls/Course2019/pull/1/files). Deze omvat het verschil tussen de statische aanpak die we tot nu toe hanteerden en de database aanpak die we vanaf nu gaan toepassen. Let vooral op de volgende bestanden en aanpassingen:
 
-* Merk op dat nu overal netstandard2.**1** staat ipv netstandard2.**0**. Dit is belangrijk, anders kan je EF Core niet installeren (want deze verwacht een library met netstandard2.1). Mocht je nog niet op .NET Core 3.X zitten, zal je hiervoor moeten switchen.
+* Merk op dat nu overal netstandard2.**1** staat ipv netstandard2.**0**. Dit is belangrijk, anders kan je EF Core niet installeren (want deze verwacht een library met netstandard2.1). Mocht je nog niet op .NET Core 3.X zitten, zal je hiervoor moeten switchen. Een hogere .NET standard is ook OK.
 * `Startup.cs` gaat er voor zorgen dat je de database kan inladen en dat die beschikbaar is, application wide. Let vooral op de veranderingen aan `ConfigureServices` (waar je je context gaat registeren) en `Configure` (waar je je database gaat opvullen). De concepten "registreren" en alles aanverwant leg ik later uit.
 * `appsettings.json` bevat de connectionstring. Deze is specifiek voor sqlite, raadpleeg de documentatie voor de connectionstring van jouw provider mocht je een andere gebruiken.
 * `Brewery.Shared` omvat nu ook de database implementatie; het staat je vrij om deze in een aparte library te zetten.

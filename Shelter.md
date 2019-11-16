@@ -6,6 +6,7 @@
   - [ASP.NET MVC - basis](#aspnet-mvc---basis)
   - [ASP.NET MVC - detail screen](#aspnet-mvc---detail-screen)
   - [ASP.NET MVC - JSON Endpoints](#aspnet-mvc---json-endpoints)
+  - [Entity Framework Core](#entity-framework-core)
 
 We gaan een aanzet geven voor de "grote oefening".
 
@@ -60,4 +61,12 @@ Dit project gaat dienen voor onze "gedeelde" code. Maak hierin een folder aan vo
 
 Alle resultaten moeten in `json` teruggegeven worden. [Deze link](https://docs.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-3.0) is een goed startpunt hiervoor.
 
+## Entity Framework Core ##
 
+- Kies een database en _stick with it_. Sqlite is makkelijkste voor iedereen, maar niet verplicht.
+- Vanaf nu werken we alleen met JSON endpoints binnen de API controller.
+- Vanaf nu werken we ook met meerdere shelters. Een dier kan slechts in één shelter zitten. Een medewerker kan wel werken voor meerdere shelters.
+- Zorg voor een methode ...
+  - die alle animals laat zien van één shelter, met alle details van dat dier.
+  - die alle shelters laat zien, zonder de dieren.
+  - die alle animals laat zien gecombineerd met hun shelter informatie in één platte lijst { animalId, shelterId, animalName, shelterName } of iets gelijkaardig.

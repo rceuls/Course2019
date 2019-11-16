@@ -28,6 +28,7 @@ namespace Brewery.MVC
       services.AddControllersWithViews();
       services.AddDbContext<BreweryContext>(options => options.UseSqlite(Configuration.GetConnectionString("BeerContext")));
       services.AddScoped<IDatabaseInitializer, DatabaseInitializer>();
+      services.AddScoped<IBreweryDataAccess, BreweryDataAccess>();
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

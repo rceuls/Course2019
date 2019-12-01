@@ -56,5 +56,11 @@ namespace Brewery.MVC.Controllers
       var beer = _dataAccess.GetBeerByBreweryAndId(breweryId, beerId);
       return beer == default(Shared.Beer) ? (IActionResult)NotFound() : Ok(beer);
     }
+
+    [HttpPut("{breweryId}/beers/{beerId}")]
+    public IActionResult UpdateBeer(int breweryId, int beerId, [FromBody]Shared.Beer beer)
+    {
+      return Ok(beer);
+    }
   }
 }
